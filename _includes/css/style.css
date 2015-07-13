@@ -124,7 +124,7 @@
     font-size: 30px;
 }
 .rss-btn:hover {
-    color:{{ site.colors.link }};
+    color: #f37538;
 }
 
 body { 
@@ -570,7 +570,7 @@ a:focus {
 }
 
 .ctitle {
-	color: {{ site.colors.primary }};
+	color: {{ site.colors.text }};
 	font-weight: 700;
 	margin-bottom: 15px;
 }
