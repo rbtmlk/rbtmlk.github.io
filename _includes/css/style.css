@@ -91,9 +91,11 @@
     color: #eee;
 }
 
-.uppercase {
+.project-details {
+    font-family: "Roboto";
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 
@@ -216,14 +218,19 @@ a:focus {
 	color: white;
 }
 
+.navbar-header .navbar-brand:hover {
+	color: white;
+}
+
 .navbar-default .navbar-nav > li > a {
 	color: white;
 	font-weight: 700;
 	font-size: 12px;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
-	color: {{ site.colors.primary }};
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-toggle:hover {
+	color: #F5EBCD;
 }
 
 .navbar-default .navbar-nav > .active > a, 
@@ -258,9 +265,7 @@ a:focus {
     border: 0;
     color: #fff;
 }
-.navbar-default .navbar-toggle:hover {
-    color: {{ site.colors.primary }};
-}
+
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: transparent;
 }
@@ -273,6 +278,12 @@ a:focus {
     .navbar-default .navbar-nav > li > a {
         font-size: 40px;
         line-height: 60px;
+    }
+    .navbar-default .navbar-nav > .active > a, 
+    .navbar-default .navbar-nav > .active > a:hover, 
+    .navbar-default .navbar-nav > .active > a:focus {
+        border-bottom: 0;
+        color: {{ site.colors.primary }};
     }
 }
 
@@ -342,7 +353,7 @@ a:focus {
 }
 
 .hline {
-	border-bottom: 2px solid {{ site.colors.text }};
+	border-bottom: 2px solid {{ site.colors.primary }};
 }
 
 .hline-w {

@@ -1,0 +1,13 @@
+---
+layout: project
+title:  "KUMA"
+date:   2015-05-12 00:00:00
+categories:
+- project
+img: kuma.png
+video: https://player.vimeo.com/video/106369254
+tags: animation
+client: personal
+---
+####「KUMA」
+Animation made in After Effects.
