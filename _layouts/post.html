@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div style="height: 70px; width: 100%; background-color: #111; position: absolute; top: 0px;"></div>
+{% include wrap.html %}
+
+<div class="container mtb">
+    <div class="row">
+        <!-- SINGLE POST -->
+        <div class="col-lg-8">
+            <!-- Blog Post  -->
+            {% if page.img %}<p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img }}"></p>{% endif %}
+            <a href="{{ page.url | prepend: site.baseurl }}"><h3 class="ctitle">{{ page.title }}</h3></a>
+            <p><csmall>{{ page.date | date: "%b %-d, %Y" }}</csmall></p>
+              
+            {{ content }}
+
+            <div class="spacing"></div>
+        </div><! --/col-lg-8 -->
+        
+        {% include sidebar.html %}
+
+    </div><!--/row -->
+    <a href="/blog/" alt="Back to all the posts"><p><i class="fa fa-arrow-left"></i> Back</p></a>
+</div><!--/container -->
