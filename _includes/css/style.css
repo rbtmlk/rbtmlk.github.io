@@ -1,25 +1,14 @@
-/*	################################################################
+/*	##################################################### */ 
 
-	Author: Carlos Alvarez
-	URL: http://alvarez.is
-
-	Project Name: SOLID - Bootstrap 3 Theme
-	Version: 1.0
-	URL: http://alvarez.is
-	
-################################################################# */ 
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
-@import url("prettyPhoto.css") screen;
-@import url("hoverex-all.css") screen;
+@import url("hoverex-all.css") screen; /* needed for portfolio grid */
 
 /*	################################################################
 	1. GENERAL STRUCTURES
 ################################################################# */
-	* { 
-		margin: 0;
-		padding: 0px;
-	} 
+* { 
+    margin: 0;
+    padding: 0px;
+} 
 
 .portfolio-centered {
     background-color: {{ site.colors.primary_dark }};
@@ -27,7 +16,7 @@
 
 .portfolio-hover-title {
  position: absolute;
-  top: 45%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -81,6 +70,7 @@
   height: 100%;
 }
 
+/***** PROJECT *********/
 .project #page-title h3{
     color: #fff;
 }
@@ -90,12 +80,22 @@
 .project p {
     color: #eee;
 }
-
 .project-details {
     font-family: "Roboto";
     text-transform: uppercase;
     font-weight: 300;
     font-size: 16px;
+}
+
+@media screen and (max-width: 991px) {
+    .project #page-title h3{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .project #page-title h3{
+        font-size: 24px;
+    }
 }
 
 
@@ -287,7 +287,7 @@ a:focus {
     }
 }
 
-
+/*** /nav **/
 
 
 .btn-theme {
@@ -416,7 +416,6 @@ a:focus {
 	display:block;
 }
 
-
 .portfolio-item .title:before {border-radius:0; display:none}
 .portfolio-item p {margin:0px 0 30px;}
 .portfolio-item h3 {margin:-10px 0 10px; font-size:16px; text-transform:uppercase;}
@@ -446,62 +445,7 @@ a:focus {
 	text-align:center;
 }
 
-/* Testimonials Wrap */
-#twrapback {
-    background-color: {{ site.colors.primary }};
-    background-color:rgba({{ site.colors.primary_rgb }},.8);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
-#twrap {
-    background: url(../img/t-back.jpg) no-repeat center top;
-    position: relative;
-    margin-top: 0px;
-	padding-top:60px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 450px;
-	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#twrap i {
-	font-size: 50px;
-	color: white;
-	margin-bottom: 25px;
-}
-
-#twrap p {
-	color: white;
-	font-size: 15px;
-	line-height: 30px;
-}
-
-/* clients logo */
-#cwrap {
-	background: #f7f7f7;
-	margin-top: 0px;
-	padding-top: 80px;
-	padding-bottom: 100px;
-}
-
-#cwrap h3 {
-	margin-bottom: 60px;
-}
 
 /* Footer */
 #footerwrap {
@@ -511,41 +455,23 @@ a:focus {
 }
 
 #footerwrap p {
-	color: {{ site.colors.footer_content }};
-}
-
-#footerwrap h4 {
-	color: {{ site.colors.footer_heading }};
+	color: #fff;
 }
 
 #footerwrap i {
 	font-size: 30px;
-	color: {{ site.colors.footer_content }};
+	color: {{ site.colors.red }};
 	padding-right: 25px;
 }
 
 #footerwrap i:hover {
-	color: #F5EBCD;
+	color: {{ site.colors.yellowy-white }};
 }
 
 /*	################################################################
 	PAGE CONFIGURATIONS
 ################################################################# */
 /* General Tweaks */
-
-<!--
-#blue {
-	background: {{ site.colors.primary }};
-	margin-top: 60px;
-	margin-bottom: 60px;
-	padding-top: 25px;
-	padding-bottom: 25px;
-}
-
-#blue h3 {
-	color: white;
-	margin-left: 15px;
-}-->
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -589,7 +515,7 @@ csmall {
 	background: {{ site.colors.primary }};
 }
 
-/* Contact Page */
+/* Contact Page 
 #contactwrap {
 	background: url(../img/contact.jpg) no-repeat center top;
 	margin-top: -60px;
@@ -611,7 +537,7 @@ csmall {
     background-size: cover;
 }
 
-/* Blog Page */
+/* Blog Page *
 .popular-posts { 
 	margin: 0px;
 	padding-left: 0px;
@@ -650,7 +576,7 @@ csmall {
 	padding-right: 15px;
 	font-size: 18px;
 }
-
+*/
 a.anchor{
     display: block; 
     position: relative; 
