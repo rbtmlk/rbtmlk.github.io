@@ -257,13 +257,23 @@ a:focus {
 	font-size: 12px;
 }
 
-/* mobile menu */
+/*** mobile menu ***/
 .navbar-default .navbar-toggle i {
     font-size: 20px;
 }
 .navbar-default .navbar-toggle {
     border: 0;
     color: #fff;
+}
+/* change icon */
+.navbar-toggle.active i:before {
+    content: "\f00d" !important;
+}
+.collapsed i:before{
+    content: "\f0c9" !important;
+}
+.navbar-toggle:active {
+    top: 2px;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {

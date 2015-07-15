@@ -1,15 +1,3 @@
-(function($) {
-
-// prettyPhoto
-	jQuery(document).ready(function(){
-		jQuery('a[data-gal]').each(function() {
-			jQuery(this).attr('rel', jQuery(this).data('gal'));
-		});  	
-		jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'light_square',slideshow:false,overlay_gallery: false,social_tools:false,deeplinking:false});
-	}); 
-
-		
-})(jQuery);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
@@ -20,4 +8,12 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+});
+
+
+// jQuery for mobile navbar toggle button
+$(document).ready(function () {
+      $(".navbar-toggle").on("click", function () {
+            $(this).toggleClass("active");
+      });
 });
