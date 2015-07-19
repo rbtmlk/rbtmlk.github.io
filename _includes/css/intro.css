@@ -30,13 +30,14 @@ html {
     font-family: "Montserrat", sans-serif;
 }
 
-.intro .intro-body .intro-text {
+.intro-text {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     text-align: left;
     font-size: 40px;
     line-height: 40px;
     color: #fff;
+    text-rendering: optimizeLegibility;
 }
 
 @media(min-width:767px) {
@@ -49,13 +50,13 @@ html {
         font-size: 100px;
     }
 
-    .intro .intro-body .intro-text {
+    .intro-text {
         font-size: 72px;
         line-height: 72px;
     }
 }
 @media screen and (min-width: 992px) {
-    .intro .intro-body .intro-text {
+    .intro-text {
         font-size: 100px;
         line-height: 100px;
     }

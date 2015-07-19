@@ -2,7 +2,7 @@
 
 # Site settings
 title: Robot Milk Intergalactic
-description: "The work of Mattis Johansson. He makes all sorts of things, and if you give him money he can make things for you!"
+description: "The work of Mattis Johansson. He makes all sorts of things, and if you give him money he can make things for you too!"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
 url: "http://robotmilk.co"

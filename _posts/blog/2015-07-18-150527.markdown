@@ -1,0 +1,11 @@
+---
+layout: post
+title: "150527"
+date: 2015-07-18 00:00:00
+categories: 
+- blog
+img: 150527.gif
+---
+
+####Daily Challenge
+3 seconds of animation made in (around) 30 minutes.
