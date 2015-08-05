@@ -31,8 +31,8 @@
 #page-title h3 {
 	color: #444;
     text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
     font-size: 48px;
 }
 
@@ -132,8 +132,8 @@ body {
 	margin: 0; 
 	height: 100%; 
 	color: {{ site.colors.text }};
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 300;
 	}
 
 h1, h2, h3, h4, h5, h6 {
@@ -199,6 +199,17 @@ a:focus {
 	text-align: center
 }
 
+
+.white-text {
+    color: white;
+}
+.white-text a {
+    color: rgba(255,255,255,0.666);
+}
+.white-text a:hover {
+    color: white;
+}
+
 /*	################################################################
 	BOOTSTRAP MODIFICATIONS & TWEAKS
 ################################################################# */
@@ -224,6 +235,7 @@ a:focus {
 
 .navbar-default .navbar-nav > li > a {
 	color: white;
+    font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 12px;
 }
