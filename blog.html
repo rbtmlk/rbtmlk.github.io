@@ -16,8 +16,13 @@ permalink: /blog/
                     <h3 class="ctitle">{{ post.title }}</h3>
                 {% if post.readmore %}</a>{% endif %}
                 {% if post.readmore %}<a href="{{ post.url | prepend: site.baseurl }}">{% endif %}
-                    {% if post.img %}<img class="img-responsive" style="margin: 0 auto;" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ post.img }}">{% endif %}
+                {% if post.img %}<img class="img-responsive" style="margin: 0 auto;" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ post.img }}">{% endif %}
                 {% if post.readmore %}</a>{% endif %} 
+                {% if post.video %}
+                    <div class="icontain">
+                      <iframe src="{{ post.video }}" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                {% endif %}
                 {{ post.excerpt }}
                 <p style="background: #f7f7f7; display: inline-block; padding: 0 6px;"><csmall>{{ post.date | date: "%b %-d, %Y" }}</csmall></p>
                 {% if post.readmore %}<p><a href="{{ post.url | prepend: site.baseurl }}" style="color: {{ site.colors.text }};"><i class="fa fa-arrow-right"></i></a></p>{% endif %}
