@@ -1,0 +1,10 @@
+---
+layout: post
+title: "I Have a Mouth, and I Must Not Scream"
+date: 2015-08-18 01:00:00
+categories: 
+- blog
+video: https://player.vimeo.com/video/136594950
+---
+
+Tried out some new things and animated to the sound of [this](https://www.youtube.com/watch?v=3L7VJl76i9U).
