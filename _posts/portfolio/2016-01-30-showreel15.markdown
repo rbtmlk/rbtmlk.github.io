@@ -1,0 +1,15 @@
+---
+layout: project
+title:  "SHOWREEL 2015"
+date:   2016-01-30 00:00:00
+categories:
+- project
+img: showreel15.jpg
+video: https://player.vimeo.com/video/153600576
+tags: animation
+client: personal
+---
+####SHOWREEL 2015
+My reel for 2015. 
+
+music: You Love Her Coz She's Dead - Diamonds (feat. Lalib Thabib)

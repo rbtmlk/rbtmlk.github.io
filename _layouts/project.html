@@ -36,7 +36,7 @@ body {
             <p><b>When:</b> {{ page.date | date: "%b, %Y" }}</p>
             <p><b>What:</b> {{ page.tags }}</p>
             <p><b>Client:</b> {{ page.client }}</p>
-            {% if page.website %}<p><b>Website:</b> <a href="{{ page.website }}">{{ page.website }}</a></p>{% endif %}
+            {% if page.website %}<p><b>Website:</b> <a href="{{ page.website }}" target="_blank">{{ page.website }}</a></p>{% endif %}
         </div>
     </div><! --/row -->
 </div><! --/container -->
