@@ -5,7 +5,7 @@ date:   2016-01-20 00:00:00
 categories:
 - project
 img: rentunder.jpg
-video: https://player.vimeo.com/video/157721759
+video: https://player.vimeo.com/video/157721759?title=0&byline=0&portrait=0
 tags: animation
 client: Rentunder AB
 website: http://rentunder.se
