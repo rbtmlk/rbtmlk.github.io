@@ -9,5 +9,5 @@ video: https://player.vimeo.com/video/106369254
 tags: animation
 client: personal
 ---
-####「KUMA」
+#### 「KUMA」
 Animation made in After Effects.

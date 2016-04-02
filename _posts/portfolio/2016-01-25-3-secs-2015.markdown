@@ -9,7 +9,7 @@ video: https://player.vimeo.com/video/153017586
 tags: animation
 client: personal
 ---
-####3 Seconds of Animation [2015]
+#### 3 Seconds of Animation [2015]
 Daily Challenge: make 3 seconds of animation in 30 minutes, every day.
 
 I managed to keep it up every day for a month or two, then it sort of turned into just once a month...
