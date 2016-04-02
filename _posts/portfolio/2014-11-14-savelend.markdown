@@ -5,7 +5,7 @@ date:   2014-11-14 00:00:00
 categories:
 - project
 img: savelend.png
-video: https://player.vimeo.com/video/112316404
+video: https://player.vimeo.com/video/112219619
 tags: animation
 client: Savelend Sweden AB
 website: http://savelend.se
