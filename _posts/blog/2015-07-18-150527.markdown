@@ -7,5 +7,10 @@ categories:
 img: 150527.gif
 ---
 
+<<<<<<< HEAD
 #### Daily Challenge
 3 seconds of animation made in (around) 30 minutes.
+=======
+<h4>Daily Challenge</h4>
+3 seconds of animation made in (around) 30 minutes.
+>>>>>>> origin/master
