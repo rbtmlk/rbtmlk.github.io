@@ -1,9 +1,0 @@
----
-layout: post
-title: ""
-date: 2015-07-13 00:00:00
-categories: 
-- blog
----
-
-![Image](http://i.imgur.com/kfj2U5u.gif)

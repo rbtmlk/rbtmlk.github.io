@@ -5,7 +5,7 @@ date:   2013-04-01 00:00:00
 categories:
 - project
 img: assassina.jpg
-video: https://player.vimeo.com/video/99760639
+video: https://player.vimeo.com/video/99760639?title=0&byline=0&portrait=0
 tags: 3d, animation
 client: personal
 ---

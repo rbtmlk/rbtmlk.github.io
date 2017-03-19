@@ -2,24 +2,32 @@
 layout: default
 ---
 <div style="height: 70px; width: 100%; background-color: {{ site.colors.primary_dark }}; position: absolute; top: 0px;"></div>
-{% include wrap.html %}
 
-<div class="container mtb">
-    <div class="row">
-        <!-- SINGLE POST -->
-        <div class="col-lg-8">
-            <!-- Blog Post  -->
-            {% if page.img %}<p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img }}"></p>{% endif %}
-            <a href="{{ page.url | prepend: site.baseurl }}"><h3 class="ctitle">{{ page.title }}</h3></a>
-            <p><csmall>{{ page.date | date: "%b %-d, %Y" }}</csmall></p>
-              
-            {{ content }}
+<article class="project">
+    <div class="container mtb">
+        <div id="project-title" class="row">
+                <h1>{% if page.wrap_title %}{{ page.wrap_title }}{% else %}{{ page.title }}{% endif %}</h1>
+            </div>
+        <div class="row">
+            <!-- SINGLE POST -->
+            <div class="col-lg-8">
+                <!-- Blog Post  -->
+                {% if page.img %}<p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img }}"></p>{% endif %}
+                {% if page.video %}
+                <div class="icontain">
+                  <iframe src="{{ page.video }}?&color=00FA96" frameborder="0" allowfullscreen></iframe>
+                </div>
+                {% endif %}
+                <a href="{{ page.url | prepend: site.baseurl }}"><h3 class="ctitle">{{ page.title }}</h3></a>
+                <p><csmall>{{ page.date | date: "%b %-d, %Y" }}</csmall></p>
 
-            <div class="spacing"></div>
-        </div><!-- /col-lg-8 -->
-    
-    </div><!--/row -->
-    <div class="row">
-        <a href="/blog/" alt="Back to all the posts"><p><i class="fa fa-arrow-left"></i> Back</p></a>
+                {{ content }}
+
+            </div><!-- /col-lg-8 -->
+
+        </div><!--/row -->
+        <div class="row">
+            <a href="/blog/" alt="Back to all the posts"><p><i class="fa fa-arrow-left"></i> Back</p></a>
+        </div>
     </div>
-</div><!--/container -->
+</article>

@@ -5,7 +5,7 @@ date:   2016-01-25 00:00:00
 categories:
 - project
 img: 3secs_2015.jpg
-video: https://player.vimeo.com/video/153017586
+video: https://player.vimeo.com/video/153017586?title=0&byline=0&portrait=0
 tags: animation
 client: personal
 ---

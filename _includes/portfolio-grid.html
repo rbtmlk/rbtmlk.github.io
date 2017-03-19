@@ -1,0 +1,37 @@
+<section id="portfolio">
+    <div class="row">
+        {% for project in site.categories['project'] limit:include.limit %}
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 portfolio-grid-item">
+            <a href="{{ project.url | prepend: site.baseurl }}" title="{{ project.title }}">
+                <img src="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ project.img }}" alt="{{ project.title }}">
+                <h3 class="portfolio-hover-title">{{ project.title }}</h3>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<style>
+    #portfolio { background: #111; }
+    #portfolio .portfolio-grid-item a h3 {
+        opacity: 0;
+        text-align: center;
+    }
+    #portfolio .portfolio-grid-item a:hover h3 {
+        opacity: 1;
+    }
+    #portfolio .portfolio-grid-item a img {
+        opacity: 1;
+    }
+    #portfolio .portfolio-grid-item a:hover img {
+        opacity: 0.3;
+    }
+    #portfolio .portfolio-grid-item a img, #portfolio .portfolio-grid-item a:hover img, #portfolio .portfolio-grid-item a h3, #portfolio .portfolio-grid-item a:hover h3 {
+        transition: all 0.3s;
+    }
+    
+    #portfolio .portfolio-grid-item a img {
+        opacity: 1;
+        transition: all 0.6s;
+    }
+</style>

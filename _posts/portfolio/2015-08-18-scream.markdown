@@ -5,7 +5,7 @@ date:   2015-08-18 00:00:00
 categories:
 - project
 img: scream.jpg
-video: https://player.vimeo.com/video/136594950
+video: https://player.vimeo.com/video/136594950?title=0&byline=0&portrait=0
 tags: animation
 client: personal
 ---

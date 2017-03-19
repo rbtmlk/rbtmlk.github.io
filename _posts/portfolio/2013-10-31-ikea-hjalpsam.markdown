@@ -5,7 +5,7 @@ date:   2013-10-31 00:00:00
 categories:
 - project
 img: ikea-hjalpsam.png
-video: https://player.vimeo.com/video/99760638
+video: https://player.vimeo.com/video/99760638?title=0&byline=0&portrait=0
 tags: 3d, animation
 client: IKEA (well, not really)
 ---

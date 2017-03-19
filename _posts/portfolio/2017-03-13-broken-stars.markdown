@@ -7,7 +7,7 @@ categories:
 img: broken-stars.jpg
 video: https://player.vimeo.com/video/208004544?title=0&byline=0&portrait=0
 tags: animation
-client: personal
+client: me
 ---
 #### BROKEN STARS
 A Star Wars Thing

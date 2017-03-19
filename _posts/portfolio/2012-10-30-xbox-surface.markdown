@@ -5,7 +5,7 @@ date:   2012-10-30 00:00:00
 categories:
 - project
 img: xbox-surface.jpg
-video: https://player.vimeo.com/video/99760637
+video: https://player.vimeo.com/video/99760637?title=0&byline=0&portrait=0
 tags: 3d, animation
 client: Microsoft (well, not really)
 ---

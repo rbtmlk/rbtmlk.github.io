@@ -1,45 +1,34 @@
 ---
 layout: default
 ---
-
-<style>
-body {
-    background-color: #1e1e28;
-}
-</style>
-<div class="project">
-{% include wrap.html %}
-</div>
-<div class="container mt project">
-    <div class="row">
-        
-        {% if page.carousel %}
-            {% include carousel.html %}
-        {% endif %}
-        
-        {% if page.video %}
-        <div class="icontain">
-          <iframe src="{{ page.video }}" frameborder="0" allowfullscreen></iframe>
+<article class="project">
+    <div class="container mt">
+        <div id="project-title" class="row">
+            <h1>{% if page.wrap_title %}{{ page.wrap_title }}{% else %}{{ page.title }}{% endif %}</h1>
         </div>
-        {% endif %}
-        
-        <div class="col-lg-5 col-lg-offset-1">
-            <div class="spacing"></div>
+        <div class="row">
 
-            {{ content }}
+            {% if page.video %}
+            <div class="icontain">
+              <iframe src="{{ page.video }}&color=00FA96" frameborder="0" allowfullscreen></iframe>
+            </div>
+            {% endif %}
 
+            <div class="col-sm-5 col-sm-offset-1 mtb-s">
+
+                {{ content }}
+
+            </div>
+            <div class="col-sm-4 col-sm-offset-1 mtb-s">
+                <h4 class="project-details">Project Details</h4>
+                <div class="hline"></div>
+                <p><b>When:</b> {{ page.date | date: "%b, %Y" }}</p>
+                <p><b>What:</b> {{ page.tags }}</p>
+                <p><b>Who:</b> {{ page.client }}</p>
+                {% if page.website %}<p><b>Where:</b> <a href="{{ page.website }}" target="_blank">{{ page.website }}</a></p>{% endif %}
+            </div>
         </div>
-        <div class="col-lg-4 col-lg-offset-1">
-            <div class="spacing"></div>
-            <h4 class="project-details">Project Details</h4>
-            <div class="hline"></div>
-            <p><b>When:</b> {{ page.date | date: "%b, %Y" }}</p>
-            <p><b>What:</b> {{ page.tags }}</p>
-            <p><b>Client:</b> {{ page.client }}</p>
-            {% if page.website %}<p><b>Website:</b> <a href="{{ page.website }}" target="_blank">{{ page.website }}</a></p>{% endif %}
-        </div>
-    </div><! --/row -->
-</div><! --/container -->
+    </div>
+</article>
 
-<div class="spacing"></div>
-{% include portfolio.html limit=15 %}
+{% include portfolio-grid.html limit=25 %}

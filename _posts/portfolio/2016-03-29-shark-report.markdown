@@ -5,7 +5,7 @@ date:   2016-03-29 00:00:00
 categories:
 - project
 img: shark.jpg
-video: https://player.vimeo.com/video/160704016
+video: https://player.vimeo.com/video/160704016?title=0&byline=0&portrait=0
 tags: animation
 client: personal
 ---
