@@ -3,6 +3,10 @@
     padding: 0px;
 } 
 
+html{
+    min-height: 100%;
+    position: relative;
+}
 
 body{
     background-color: {{ site.colors.dark }};
@@ -10,7 +14,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-	margin: 0; 
+	margin: 0 0 221px; 
 	height: 100%; 
 	color: {{ site.colors.text }};
 	font-family: 'Roboto Slab', sans-serif;
@@ -253,6 +257,9 @@ footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background: {{ site.colors.primary_dark }};
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
