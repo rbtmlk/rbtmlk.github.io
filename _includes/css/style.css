@@ -481,7 +481,8 @@ footer i:hover {
 	color: white;
 }
 
-.navbar-header .navbar-brand:hover {
+.navbar-header .navbar-brand:hover,
+.navbar-header .navbar-brand:focus, {
 	color: white;
 }
 
@@ -493,7 +494,9 @@ footer i:hover {
 }
 
 .navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
 	color: #F5EBCD;
 }
 
