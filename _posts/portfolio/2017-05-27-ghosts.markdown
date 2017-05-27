@@ -1,0 +1,14 @@
+---
+layout: project
+title:  "Top 4 Reasons Why Ghosts Are Alien Gas"
+date:   2017-05-27 00:00:00
+categories:
+- project
+img: ghosts.jpg
+video: https://player.vimeo.com/video/219225302?title=0&byline=0&portrait=0
+tags: animation
+client: me
+---
+#### Top 4 Reasons Why Ghosts Are Alien Gas
+As we all know, ghosts are probably nothing more than extraterrestrial gases.
+Here's 4 randomly selected top reasons why.
