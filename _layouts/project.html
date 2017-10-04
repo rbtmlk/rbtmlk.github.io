@@ -19,14 +19,21 @@ layout: default
                 {{ content }}
 
             </div>
-            <div class="col-sm-4 col-sm-offset-1 mtb-s">
-                <h4 class="project-details">Project Details</h4>
+            <div class="project-details col-sm-4 col-sm-offset-1 mtb-s">
+                <h4>Project Details</h4>
                 <div class="hline"></div>
                 <p><b>When:</b> {{ page.date | date: "%b, %Y" }}</p>
                 <p><b>What:</b> {{ page.tags }}</p>
                 <p><b>Who:</b> {{ page.client }}</p>
                 {% if page.website %}<p><b>Where:</b> <a href="{{ page.website }}" target="_blank">{{ page.website }}</a></p>{% endif %}
             </div>
+        </div>
+        <div class="row">
+            {% if page.video2 %}
+            <div class="icontain">
+              <iframe src="{{ page.video2 }}&color=00FA96" frameborder="0" allowfullscreen></iframe>
+            </div>
+            {% endif %}
         </div>
     </div>
 </article>

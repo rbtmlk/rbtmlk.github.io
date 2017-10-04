@@ -7,5 +7,12 @@ permalink: /contact/
     body {
         background: {{ site.colors.primary_dark }};
     }
+    .navbar-brand:focus, .navbar-brand:hover,
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus,
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        color: #F5EBCD !important;
+    }
 </style>
 {% include contact.html %}
