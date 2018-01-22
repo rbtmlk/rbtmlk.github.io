@@ -21,13 +21,14 @@ colors:  #in hex code if not noted else
   purple: "#9b7db4"
   red: "#FA414B"
   yellowy-white: "#F5EBCD"
-  text: "#384452" #"#33004D"
+  text: "#413c4b" #"#384452" #"#33004D"
   link: "#428bca"
 
   primary: "#00FA96"
+  secondary: "#8264c8"
   dark: "#111"
   link: "#00FA96"
-  headline: "#fff"
+  headline: "#333"
   
 ### CONTACT SETTINGS ###
 
