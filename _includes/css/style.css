@@ -273,7 +273,8 @@ hr{
 
 /*** FOOTER ***/
 .email i{
-    color: #999 !important;
+    /*color: {{ site.colors.text }} !important;*/
+    color: rgba(65, 60, 75, 0.75) !important;
     font-size: 20px !important;
     padding-right: 0px !important;
     cursor: text;
@@ -300,13 +301,19 @@ footer {
 }
 
 footer p {
-	color: #999;
+	color: {{ site.colors.text }};
 }
 
 footer i {
 	font-size: 30px !important;
-	color: #999;
+	color: rgba(65, 60, 75, 0.666);
 	padding-right: 25px;
+    
+    -webkit-transition: color .15s linear;
+	-moz-transition: color .15s linear;
+	-o-transition: color .15s linear;
+	-ms-transition: color .15s linear;
+	transition: color .15s linear;
 }
 
 footer i:hover {
