@@ -303,11 +303,13 @@ footer {
 footer p {
 	color: {{ site.colors.text }};
 }
+footer a {
+	margin: 0 10px;
+}
 
 footer i {
 	font-size: 30px !important;
 	color: rgba(65, 60, 75, 0.666);
-	padding-right: 25px;
     
     -webkit-transition: color .15s linear;
 	-moz-transition: color .15s linear;
