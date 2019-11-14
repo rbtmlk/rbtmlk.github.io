@@ -10,7 +10,7 @@ html{
 
 body{
     background-color: #f7f5fa;
-	margin: 0 0 221px; 
+	margin: 0 0 219px; 
 	height: 100%; 
 	color: {{ site.colors.text }};
 	font-family: 'Roboto Slab', sans-serif;
@@ -22,6 +22,17 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 200;
     color: {{ site.colors.headline }};
+}
+
+h2{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+h6{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 11px;
 }
 
 p { 
@@ -65,6 +76,7 @@ a:focus {
   text-decoration: none;
 /*  color:{{ site.colors.link_hover }};*/
 }
+
 
 #things h3{
     font-weight: 400;
@@ -120,31 +132,6 @@ article.project p a:focus {
 }
 
 
-.mtb {
-	margin-top: 80px;
-	margin-bottom: 80px;
-}
-
-.mtb-s {
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
-
-.mb-xl {
-	margin-bottom: 90px;
-}
-
-.mb {
-	margin-bottom: 60px;
-}
-
-.mb-m {
-	margin-bottom: 30px;
-}
-
-.mt {
-	margin-top: 60px;
-}
 
 hr{
     border-bottom: 2px solid {{ site.colors.secondary }};
@@ -160,6 +147,10 @@ hr{
 	margin-bottom: 25px;
 }
 
+.box-shadow{
+    box-shadow: 0 15px 55px 1px rgba(16,15,17,.10);
+}
+
 
 /*** PAGE ***/
 #page-title {
@@ -172,32 +163,83 @@ hr{
 
 #page-title h1 {
 	color: {{ site.colors.headline }};
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 48px;
+}
+#page-title p {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
 
 /*** /page ***/
 
 
-/*** PORTFOLIO GRID ***/
+/*** GRID ***/
 
-.portfolio-hover-title {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#grid h3 {
+    margin: 20px 0 15px; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#grid img {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+#grid img:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#grid {
+    /*padding: 160px 15px 40px;*/
+    padding: 40px 15px;
+}
+@media (min-width:1200px){
+    #grid {
+        /*padding: 160px 160px 40px;*/
+        padding: 40px 160px;
+        min-height: 100vh;
+    }
 }
 
-#portfolio .portfolio-grid-item {
+/*** PORTFOLIO GRID ***/
+
+#portfolio-grid {
+    background: #111;
+}
+#portfolio-grid .portfolio-grid-item {
     padding: 0;
 }
 
-.portfolio-item h3 {
-    margin: 20px 0 15px; 
-    font-size: 16px;
+#portfolio-grid .portfolio-grid-item a h3 {   /* h3 */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+}
+#portfolio-grid .portfolio-grid-item a:hover h3 {
+    opacity: 1;
+}
+#portfolio-grid .portfolio-grid-item a img {
+    opacity: 1;
+}
+#portfolio-grid .portfolio-grid-item a:hover img {
+    opacity: 0.3;
+}
+
+#portfolio-grid .portfolio-grid-item a img, 
+#portfolio-grid .portfolio-grid-item a:hover img, 
+#portfolio-grid .portfolio-grid-item a h3, 
+#portfolio-grid .portfolio-grid-item a:hover h3 {
+    transition: all 0.4s;
 }
 
 /* /portfolio-grid */
@@ -675,3 +717,46 @@ footer .btn-social i:hover {
   background-color: {{ site.colors.secondary }};
   border-color: {{ site.colors.secondary }};
 }
+
+
+
+
+.mtb {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+.mtb-s {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.mb-xl {
+	margin-bottom: 120px;
+}
+.mb-l {
+	margin-bottom: 90px;
+}
+.mb {
+	margin-bottom: 60px;
+}
+.mb-s {
+	margin-bottom: 30px;
+}
+
+.mt-xl {
+	margin-top: 120px;
+}
+.mt-l {
+	margin-top: 90px;
+}
+.mt {
+	margin-top: 60px;
+}
+.mt-s {
+	margin-top: 40px;
+}
+.mt10{
+	margin-top: 10px !important;
+}
+
+.left{text-align: left !important;}

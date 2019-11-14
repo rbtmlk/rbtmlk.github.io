@@ -2,7 +2,7 @@
 layout: default
 ---
 <article class="project">
-    <div class="container mt mb">
+    <div class="container mt mb-xl">
         <div id="project-title" class="row">
             <h1>{% if page.wrap_title %}{{ page.wrap_title }}{% else %}{{ page.title }}{% endif %}</h1>
         </div>
@@ -13,13 +13,16 @@ layout: default
               <iframe src="{{ page.video }}&color=00FA96" frameborder="0" allowfullscreen></iframe>
             </div>
             {% endif %}
-
-            <div class="col-sm-5 col-sm-offset-1 mtb-s">
+            
+        </div>
+        <div class="row mt-s mb-l">
+            
+            <div class="col-sm-5 col-sm-offset-1 mb">
 
                 {{ content }}
 
             </div>
-            <div class="project-details col-sm-4 col-sm-offset-1 mtb-s">
+            <div class="project-details col-sm-4 col-sm-offset-1">
                 <h4>Project Details</h4>
                 <div class="hline" style="margin-bottom: 15px;"></div>
                 <p><b>When:</b> {{ page.date | date: "%b, %Y" }}</p>

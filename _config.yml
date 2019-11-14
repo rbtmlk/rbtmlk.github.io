@@ -2,10 +2,10 @@
 
 # Site settings
 title: Robot Milk Intergalactic
-description: "Animation and stuff by Mattis Johansson."
+#description: ""
 analytics: UA-71940621-1
 baseurl: "" #important: start with /
-url: "http://robotmilk.co"
+url: "https://robotmilk.co"
 
 # Build settings
 markdown: kramdown

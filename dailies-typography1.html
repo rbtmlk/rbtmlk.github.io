@@ -1,0 +1,50 @@
+---
+layout: default
+title: Typography - Series 1
+permalink: /dailies/typography-1/
+---
+
+<style>
+    .grid-item {margin-bottom: 30px;}
+    video {display: block;}
+    
+    #grid h2 {
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.03);
+        font-weight: 700;
+        font-size: 72px;
+        position: relative;
+        bottom: -35px;
+        left: -30px;
+        overflow: hidden;
+        margin-top: -90px;
+    }
+</style>
+
+<div id="page-title" class="">
+    <h1>{% if page.wrap_title %}{{ page.wrap_title }}{% else %}{{ page.title }}{% endif %}</h1>
+    <p>Series 1</p>
+</div>
+
+
+<section id="grid" style="padding-bottom: 160px;">
+    <div class="container-fluid">
+        <!--<h2>Series 1</h2>-->
+        <div class="row">
+            
+            {% for video in site.data.dailies-type1 %}
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="grid-item box-shadow">
+                        
+                        <video width="100%" height="auto" autoplay muted loop>
+                          <source src="/assets/vid/dailies/type-1/{{ video.file }}.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                        
+                </div>
+            </div>
+            {% endfor %}        
+            
+        </div>
+    </div>
+</section>
