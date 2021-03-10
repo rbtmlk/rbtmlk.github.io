@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Rentunder BIGWASH"
+title:  "Drive-in Boatwash"
 date:   2016-01-20 00:00:00
 categories:
 - project
