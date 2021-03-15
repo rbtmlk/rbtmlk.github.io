@@ -8,6 +8,7 @@ img: ruby.png
 video: https://www.youtube.com/embed/wIhLbP5UJbI?rel=0&amp;showinfo=0
 tags: animation
 client: personal
+published: false
 ---
 #### Kinetic Typography
 

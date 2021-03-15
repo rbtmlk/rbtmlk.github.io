@@ -1,0 +1,13 @@
+---
+layout: project
+title:  "SHOWREEL 2021"
+date:   2021-03-15 00:00:00
+categories:
+- project
+img: showreel21.png
+video: https://player.vimeo.com/video/523947514?title=0&byline=0&portrait=0
+tags: animation
+client: personal
+---
+#### SHOWREEL 2021
+My reel for 2021.
